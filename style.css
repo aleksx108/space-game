@@ -1,0 +1,84 @@
+#name{
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+	background: -webkit-linear-gradient(#df42f4, #41dff4);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	font-size: 2em;
+		margin-top: 0;
+		margin-bottom: 0;
+}
+
+#expl{
+	text-align: center;
+	font-size: 0.7em;
+}
+
+.container {
+display: block;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.canvas-container {
+  position: relative;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+#terrain {
+  width: 100%;
+  height: auto;
+  background: radial-gradient(ellipse at bottom, #3a516b 0%, #090a0f 100%);
+  z-index: 0;
+}
+
+#player {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#env {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#hud {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+#projectiles {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#main {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+@font-face {
+    font-family: 'VT323';
+    src: url('https://fonts.googleapis.com/css?family=VT323');
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/Alekss/Desktop/space%20game2/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Space game</title>
+	
+	<link rel="stylesheet" type="text/css" href="./Space game_files/style.css">
+
+	<!-- Additional fonts -->
+	<link href="./Space game_files/css" rel="stylesheet">
+	<link href="./Space game_files/css(1)" rel="stylesheet">
+</head>
+<body>
+
+    <video style="display:none;" id="video" src="../space game2/video/animation2.mp4" controls="false"></video>
+    <audio id="laserAudio">
+    <source src="../space game2/sounds/beam.wav" type="audio/wav">	
+    </audio>
+    
+    
+   
+
+	<div style="font-family: VT323;">Version 2.0</div>
+	<img id="character" style="display:none;" src="./Space game_files/spaceship_1.png">
+	<img id="asteroid" style="display:none;" src="./Space game_files/asteroid_1.png">
+
+	<h3 id="name">Space game</h3>
+
+	<div class="container">
+	    <div class="canvas-container">
+	    	<canvas id="main" width="1024" height="640" style="z-index: -1;"></canvas>
+	      <canvas id="terrain" width="1024" height="640"></canvas>
+	      <canvas id="player" width="1024" height="640"></canvas>
+	      <canvas id="env" width="1024" height="640"></canvas>
+	      <canvas id="hud" width="1024" height="640"></canvas>
+	      <canvas id="projectiles" width="1024" height="640"></canvas>
+	    </div>
+	</div>
+
+<!-- JS Scripts -->
+	<script type="text/javascript" src="./Space game_files/terrain.js.download"></script>
+	<script type="text/javascript" src="./Space game_files/player.js.download"></script>
+	<script type="text/javascript" src="./Space game_files/environment.js.download"></script>
+	<script type="text/javascript" src="./Space game_files/lazer.js.download"></script>
+	<script type="text/javascript" src="./Space game_files/main.js.download"></script>
+	<script type="text/javascript" src="./Space game_files/collision.js.download"></script>
+
+
+
+</body></html>

@@ -1,0 +1,58 @@
+var environment = document.getElementById("env");
+var ctx3 = environment.getContext("2d");
+
+function initBigStar2(){
+
+var asteroidX = environment.width;
+var asteroidY = Math.floor((Math.random() * environment.height) + 1);;
+var adx = -3;
+
+
+var img2 = new Image();
+img2.src = '../space game/img/asteroid_1.png';
+
+var width;
+var height;
+
+img2.addEventListener('load', function() {
+
+  var width = img2.ClientlWidth; 
+  var height = img2.ClientHeight; 
+}, false);
+
+ function drawCircle(){
+	ctx3.beginPath();
+	ctx3.arc(asteroidX+(img2.width/2),asteroidY+(img2.height/2), 54, 0, 2 * Math.PI);
+	ctx3.fillStyle = "blue";
+	ctx3.fill();
+}
+
+function BigStarMove2() {
+    ctx3.clearRect(asteroidX, asteroidY, img2.width+3 , img2.height);
+    ctx3.drawImage(img2, asteroidX, asteroidY);
+    asteroidX += adx;
+    drawCircle();
+    requestAnimationFrame(BigStarMove2);
+    if (asteroidX == 0) {
+    	return;
+    };
+
+var circle={x:asteroidX,y:asteroidY,r:54};
+}
+
+BigStarMove2();	
+
+};
+
+
+
+function generateBigStarPattern2(){
+	if (Visibility== true) {
+		initBigStar2();	
+	}
+    setTimeout(generateBigStarPattern2, 3000);
+}
+
+
+
+

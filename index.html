@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Additional fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+<body>
+
+    <video  style="display:none;" id="video" src="./video/animation2.mp4" controls="false"></video>
+    <audio id="laserAudio">
+    <source src="./sounds/beam.wav" type="audio/wav">
+    </audio>
+
+
+
+
+	<div style="font-family: VT323;">Version 2.0</div>
+	<img id="character" style="display:none;" src="./img/spaceship_1.png">
+	<img id="asteroid" style="display:none;" src="./img/asteroid_1.png">
+
+	<h3 id="name">Space game</h3>
+	<p id="expl">Hold E to shoot. TO DO: Add collision!! </p>
+
+	<div class="container">
+	    <div class="canvas-container">
+	    	<canvas id="main"      width="1024" height="640"></canvas>
+	      <canvas id="terrain"     width="1024" height="640"></canvas>
+	      <canvas id="player"      width="1024" height="640"></canvas>
+	      <canvas id="env" 			width="1024" height="640"></canvas>
+	      <canvas id="hud" 		   width="1024" height="640"></canvas>
+	      <canvas id="projectiles" width="1024" height="640"></canvas>
+	    </div>
+	</div>
+
+<!-- JS Scripts -->
+	<script type="text/javascript" src="./js/terrain.js" ></script>
+	<script type="text/javascript" src="./js/player.js"  ></script>
+	<script type="text/javascript" src="./js/environment.js"></script>
+	<script type="text/javascript" src="./js/lazer.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/collision.js"></script>
+</body>
+</html>
